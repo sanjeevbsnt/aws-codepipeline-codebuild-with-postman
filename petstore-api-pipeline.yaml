@@ -115,7 +115,7 @@ Resources:
             Provider: CloudFormation
           Configuration:
             TemplatePath: 'PetStoreAPI-BuildArtifact::01api/petstore-api-output.yaml'
-            ActionMode: CHANGE_SET_REPLACE
+            ActionMode: REPLACE_ON_FAILURE 
             Capabilities: CAPABILITY_IAM
             ChangeSetName: pipeline-changeset
             RoleArn: "arn:aws:iam::031342435657:role/devsecops-test-codepipelinerole"
@@ -148,4 +148,5 @@ Resources:
             - Name: 'PetStoreAPI-SourceArtifact'
           OutputArtifacts:
             - Name: 'PetStoreAPI-TestArtifact'
+
             
