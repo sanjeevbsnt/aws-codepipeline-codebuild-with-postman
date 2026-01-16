@@ -184,7 +184,7 @@
               },
               "Access-Control-Allow-Headers": {
                 "type": "string",
-                "description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the request."
+                "description": "preflight request to indicate which HTTP headers can be used when making the request."
               }
             }
           }
